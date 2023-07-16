@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+    background-color: #9999998e;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  
+  .planet {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 40px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 50%;
+    transform-origin: 0 200px;
+  }
+  
+  .planet.mercury {
+    transform: translate(-200px) rotate(0deg);
+  }
+  
+  .planet.venus {
+    transform: translate(-150px) rotate(0deg);
+  }
+  
+  .planet.earth {
+    transform: translate(-100px) rotate(0deg);
+  }
+  
+  .planet.mars {
+    transform: translate(-50px) rotate(0deg);
+  }
+  
+  
+  #fact-display {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #fact-content {
+    margin-bottom: 20px;
+  }
+  
+  #fact-content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #close-button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #close-button:hover {
+    background-color: #999;
+  }
+  
+  
